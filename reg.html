@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg & Log</title>
+    <link rel="stylesheet" href="css/style_for_reg.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sing-up">
+            <form action="">
+                <img src="img/logo_color.webp" alt="">
+                <h1>Создать аккаунт</h1>
+                <input type="text" placeholder="Как Вас зовут?">
+                <input type="email" placeholder="Введите E-Mail">
+                <input type="password" placeholder="Введите пароль">
+                <button>Создать</button>
+            </form>
+        </div>
+
+        <div class="form-container sing-in">
+            <form action="">
+                <img src="img/logo_color.webp" alt="">
+                <h1>Войти</h1>
+                <input type="email" placeholder="Введите E-Mail">
+                <input type="password" placeholder="Введите пароль">
+                <div class="remind">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me-check">
+                        <label for="remember-me-check">Запомнить меня</label>
+                    </div>
+                    <div class="forget-pass">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <button>Войти</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Добро пожаловать!</h1>
+                    <p>Введите, пожалуйста, логин и придумайте пароль</p>
+                    <button class="hidden" id="login">У Вас уже есть аккаунт?</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>С возвращением!</h1>
+                    <p>Введите, пожалуйста, логин и пароль</p>
+                    <button class="hidden" id="register">У Вас еще нет аккаунта?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/js_for_reg.js"></script>
+</body>
+</html>
